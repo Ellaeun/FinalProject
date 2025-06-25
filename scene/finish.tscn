@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bkluselsbaesh"]
+
+[ext_resource type="Texture2D" uid="uid://qcgk8ovhrpll" path="res://Asset/trophy.webp" id="1_g0qo3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bq37b"]
+size = Vector2(73, 77)
+
+[node name="Finish" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(25.1875, 18.125)
+scale = Vector2(0.120067, 0.101786)
+texture = ExtResource("1_g0qo3")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(26.5, 18.5)
+shape = SubResource("RectangleShape2D_bq37b")

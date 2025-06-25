@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8f0y7fom8ped"]
+
+[ext_resource type="AudioStream" uid="uid://bbw444s8v38ri" path="res://music/Polar Lights.mp3" id="1_y257y"]
+
+[node name="music" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_y257y")
+autoplay = true
+bus = &"music"
