@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bkluselsbaesh"]
+[gd_scene load_steps=4 format=3 uid="uid://bkluselsbaesh"]
 
+[ext_resource type="Script" uid="uid://c0c0ia6y617ng" path="res://scene/finish.gd" id="1_bq37b"]
 [ext_resource type="Texture2D" uid="uid://qcgk8ovhrpll" path="res://Asset/trophy.webp" id="1_g0qo3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bq37b"]
 size = Vector2(73, 77)
 
 [node name="Finish" type="Area2D"]
+script = ExtResource("1_bq37b")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(25.1875, 18.125)
@@ -15,3 +17,5 @@ texture = ExtResource("1_g0qo3")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(26.5, 18.5)
 shape = SubResource("RectangleShape2D_bq37b")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
